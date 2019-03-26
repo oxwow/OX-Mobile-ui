@@ -1,14 +1,22 @@
 # OX-Mobile-ui
+
 为了以后高效的进行移动端界面，创建这个代码库，下面将简单的介绍下这个库的用法和命名规则。
 
 ## 目录结构
->ox-mobile-ui/
-> ├── less/
-> ├── js/
-> ├── fonts/
-> ├── dist/
-> │   ├── css/
-> │   ├── js/
-> │   └── fonts/
-> └── docs/
->     └── examples/
+```
+ ox-mobile-ui/
+ ├── less/              css源码
+ ├── js/                js源码
+ ├── fonts/             字体源码
+ ├── dist/              预编译后的文件夹
+ │   ├── css/               css
+ │   ├── js/                js
+ │   └── fonts/             字体
+ └── template/          模板
+ │   └── examples/          实例展示
+ └── docs/              说明文档
+```
+
+## CSS命名规则
+
+构架的所有命名规则都是以 `ox-*` 开头，比如网页的总容器的类名是：`ox-page-container` 这样做看起来似乎有一点多余，但是这样做的目的是，避免和你自己编写的样式，或者你引入的第三方插件的样式产生冲突。
